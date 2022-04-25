@@ -1,0 +1,171 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Ryan Drecourt</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Untitled-1.css">
+  <style>
+    body{
+        font-family: arial;
+    }
+        #test{
+            width: 500px;
+            margin: auto;
+        }
+        #test_status{
+            width: 500px;
+            margin: auto;
+            align:center;
+        }
+    </style>
+</head>
+
+<body>
+  <nav>
+    <h1>L'ordinateur</h1>
+    <ul>
+      <div class="onglets">
+        <li><a href="#source">Source</a></li>
+        <li><a href="Index.quizz.html">Quizz</a></li>
+        <li><a>Montage</a>
+          <ul>
+            <li><a href="index.montage.html">Composants</a></li>
+            <li><a href="index.montage2.html">Montage carte mere</a></li>
+            <li><a href="Index.tour.html">Montage tour</a></li>
+          </ul>
+          
+        </li>
+        <li><a href="index.caracteristique.html">Composants</a></li>
+        <li><a>Histoire</a>
+          <ul>
+            
+            <li><a href="Index.precurseurs.html">Précurseurs</a></li>
+            <li><a href="Index.13.html">1er gen -3ème gen</a></li>
+            <li><a href="Index.45.html">4ème gen et 5ème gén</a></li>
+          </ul>
+          </li>
+        <li><a href="index.html">Accueil</a></li>
+      </div>
+    </ul>
+    
+  </nav>
+
+  <header>
+    <h1>L'ordinateur</h1>
+
+    <div class="bouton"><a  target="_blank" href="http://sn.lycee-europe-dunkerque.fr/"><img src="images/Capture d’écran 2022-03-13 190755.png"></a> 
+  
+  </header>
+
+  <section class="main" id="Histoire">
+    <div class="hi">
+      <div class="content">
+        <div class="card">
+          <div class="indexleft">
+            <script>
+                var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+                var questions = [
+                     ["Combien de composants contient dans un ordinateur (sans le boitier) ?", "6", "7", "8", "B"],
+                         ["Combien il y'a de type de stockage ?", "1", "2", "3", "C"],
+                         ["Que veux dire nvme ?", "Non-Volatile Memory Express", "Non-Volatile Memory Encryption", "Non-Volatile Mentality Encryption", "A"],
+                         ["Quelle élements est pas sur la carte mère ?", "Stockage nvme", "Carte-graphique", "Stockage SSD", "C"],
+                         ["En quelle année à etais crée la pascaline ?", "1642", "1652", "1662", "A"],	
+                         ["En quelle année à etais crée la machine analytique ?", "1834", "1734" , "1934", "A"],
+                         ["Quand est apparu la premier generation d'ordinateur ?", "1945", "1944" , "1946", "A"],
+                         ["En quelle année est apparu le transistor", "1955", "1958" , "Jamais", "B"],
+                         ["Comment ce nomme la structure apparu lors de la 3eme generation", "PDP-6", "PDP-7" , "PDP-8", "C"],
+                         ["Quelle langauge de programmation j'ai utlisé", "Html/Css", "Html/Css/PHP" , "Html/Css/Js", "C"],
+                         ["Aurais-je une bonne note pour mon projet ?",   "Oui",  "Non", "Je pense","A"]
+                        ];
+                        function _(x){
+                    return document.getElementById(x);
+                }
+                function renderQuestion(){
+                    test = _("test");
+                    if(pos >= questions.length){
+                        test.innerHTML = "<h2>Tu as "+correct+" questions correctes par "+questions.length+" questions </h2>";
+                        _("test_status").innerHTML = "FIN DE QUIZZ";
+                        alert("Les réponses etais : 6  3  Non-Volatile Memory Express  Stockage SSD  1642  1834  1945  1958  PDP-8  Html/Css/Js et la derniere ;)");
+                        pos = 0;
+                        correct = 0;
+                        return false;
+                    }
+                    _("test_status").innerHTML = "Question "+(pos+1)+" sur "+questions.length;
+                    question = questions[pos][0];
+                    chA = questions[pos][1];
+                    chB = questions[pos][2];
+                    chC = questions[pos][3];
+                    test.innerHTML = "<h3>"+question+"</h3>";
+                    test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+                    test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+                    test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
+                    test.innerHTML += "<button onclick='checkAnswer()'>Suivant !</button>";
+                }
+                function checkAnswer(){
+                    choices = document.getElementsByName("choices");
+                    for(var i=0; i<choices.length; i++){
+                        if(choices[i].checked){
+                            choice = choices[i].value;
+                        }
+                    }
+                    if(choice == questions[pos][4]){
+                        correct++;
+                    }
+                    pos++;
+                    renderQuestion();
+                }
+                window.addEventListener("load", renderQuestion, false);
+                </script>
+                </head>
+                <body bgcolor="#CFCECB">
+                <h2 id="test_status"></h2>
+                <fieldset id="test">
+                    
+                </fieldset>
+                </body>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <footer>
+
+    <h1>Source</h1>
+    <div class="source">
+
+      <div class="source">
+        <h3>Wikipedia</h3>
+        <p>Je me suis aidé de Wikipedia afin d'avoir des informations supplementaire.</p>
+      </div>
+
+      <div class="source">
+        <h3>Youtube</h3>
+        <p>FrenchCoder - Développement Web</p>
+        <p>Pool</p>
+        <p>Le Frère Codeur</p>
+      </div>
+
+      <div class="source">
+        <div class="bouton"><a href="#"><img src="images/haut.png"></a> 
+      </div>
+
+      <div class="source">
+        <h3>Cours de Mr. Quéru</h3>
+        <p>J'ai réutilise les cours de monsieur quéru notamement pour le css ainsi que le html.</p>
+      </div>
+
+      <p id="source"> Drecourt.travail@gmail.com | &copy; 2022, Dunkerque.</p>
+    </div>
+
+    
+  </footer>
+</body>
+</html>
+
+
+  

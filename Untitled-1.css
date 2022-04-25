@@ -1,0 +1,355 @@
+@media screen and (max-width: 30000px)
+{
+    /* 
+corps
+corps
+corps
+corps
+corps
+corps
+*/
+
+
+body{
+    background-image: url(images/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background-image: url(images/nav.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    float: left;
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+header{
+    border-bottom: 5px solid #6f6f6f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://th.bing.com/th/id/OIP.KHVZaA0NPsOK-S4QtmMe2gHaE7?w=243&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7');
+    background-size: 100%;
+    color: #fff;
+    padding: 40px;
+}
+header h1{
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header button{
+    
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+.main{  
+    background-image: url();  
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: #6f6f6f;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color: black;
+   color:white;
+}
+
+.main .content .card .right img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer .services .service{
+    margin-right: 30px;
+}
+
+footer .source .bouton img{
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    float: right;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+}
+.main .content .card .left{
+    height:500px;
+    width: 2000px;   
+}
+.main .content .card .indexleft{
+    flex: 0 0 30%;
+   padding: 20px;
+   background-color: black;
+   color:white;
+   height: 500px;
+}
+.main .content .card .indexright img{
+    height:500px;
+    width: 500px;
+    margin-top: 5px;
+}
+
+nav ul li {
+    width: 200px;
+    float: right;
+    list-style-type: none;
+}
+nav ul li ul{visibility: hidden;}
+nav ul li:hover ul {visibility: visible;}
+
+
+
+
+
+/*
+Fin corps
+Fin corps
+Fin corps
+Fin corps
+Fin corps
+Fin corps
+*/
+
+
+/* 
+Composants
+Composants
+Composants
+Composants
+Composants
+Composants
+*/
+
+.main .content .card .left .pheripherique {
+    height:300px;
+    width: 300px;
+    margin-top: 5px;
+}
+.main .content .card .left .rouge{
+    color: red;
+    height: 90px;
+}
+.main .content .card .right .rouge{
+    color: red;
+    height: 990px;
+}
+.main .content .card .left .orange{
+    color: orange;
+}
+.main .content .card .left .bleu{
+    color: blue;
+}
+.main .content .card .left .jaune{
+    color: yellow;
+}
+.main .content .card .left .violet{
+    color: purple;
+}
+.main .content .card .left .proc{
+    width: 300px;
+    height: 310px;
+}
+
+.main .content .card .left .carte{
+    width: 300px;
+    height: 300px;
+}
+.main .content .card .right .alimentation img{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .ram {
+    height: 3000px;
+    margin-top: 1000px;
+}
+/*
+Fin composants
+Fin composants
+Fin composants
+Fin composants
+Fin composants
+Fin composants
+*/
+
+
+
+/*
+Debut histoire
+Debut histoire
+Debut histoire
+Debut histoire
+Debut histoire
+Debut histoire
+*/
+.main .content .card .right .schickard{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .pascaline{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .analytique{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .un{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .deux{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .trois{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .quatre{
+    height: 300px;
+    margin-top: 80px;
+}
+.main .content .card .right .cinq{
+    height: 300px;
+    margin-top: 80px;
+}
+
+.main .content .card .right .Composants {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.main .content .card .right .Composants .video {
+    height: 30px;
+    width: 30px;
+    
+}
+
+
+/*
+Fin histoire
+Fin histoire
+Fin histoire
+Fin histoire
+Fin histoire
+Fin histoire
+*/
+
+
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+
+    
+}
+}
